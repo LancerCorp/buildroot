@@ -10,7 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- bash: apt-get install build-essential ncurses-base ncurses-bin libncurses5-dev dialog
+- bash: sudo apt-get install -y build-essential ncurses-base ncurses-bin libncurses5-dev dialog
   displayName: 'Get dependencies'
 
 - bash: make wandboard_lancer_defconfig
