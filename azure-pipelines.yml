@@ -10,7 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- bash: sudo apt-get install -y  sed make binutils build-essential gcc g++ bash patch gzip bzip2 perl tar cpio python unzip rsync file bc wget libncurses5-dev cvs git mercurial scp subversion asciidoc w3m dblatex graphviz python-matplotlib
+- bash: sudo apt-get install -y  sed make binutils build-essential gcc g++ bash patch gzip bzip2 perl tar cpio python unzip rsync file bc wget libncurses5-dev cvs git mercurial subversion python-matplotlib
   displayName: 'Get dependencies'
 
 - bash: make wandboard_lancer_defconfig
